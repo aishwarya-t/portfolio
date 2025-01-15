@@ -1,38 +1,21 @@
 import React from "react";
+import "./Header.css";
 
 const Header = () => (
-  <header style={{ backgroundColor: "#9a9d68", padding: "18px 20px" }}>
-    <div
-      style={{
-        display: "flex",
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}
-    >
+  <header className="header">
+    <div className="header-container">
       {/* Name Section */}
-      <div
-        style={{
-          fontFamily: "'Times New Roman', Times, serif",
-          fontSize: "28px",
-          fontWeight: "bold",
-          color: "#f5f0ec",
-        }}
-      >
+      <div className="header-name">
         Aishwarya Thadiparthi
       </div>
 
       {/* Social Links */}
-      <div>
+      <div className="header-links">
         <a
           href="https://linkedin.com/in/aishwaryat"
           target="_blank"
           rel="noopener noreferrer"
-          style={{
-            marginLeft: "15px",
-            textDecoration: "none",
-            color: "#f5f0ec",
-            fontSize: "14px",
-          }}
+          aria-label="LinkedIn"
         >
           <i className="fab fa-linkedin"></i> LinkedIn
         </a>
@@ -40,23 +23,13 @@ const Header = () => (
           href="https://github.com/aishwarya-t"
           target="_blank"
           rel="noopener noreferrer"
-          style={{
-            marginLeft: "15px",
-            textDecoration: "none",
-            color: "#f5f0ec",
-            fontSize: "14px",
-          }}
+          aria-label="GitHub"
         >
           <i className="fab fa-github"></i> GitHub
         </a>
         <a
           href="mailto:athadipa@uci.edu"
-          style={{
-            marginLeft: "15px",
-            textDecoration: "none",
-            color: "#f5f0ec",
-            fontSize: "14px",
-          }}
+          aria-label="Email"
         >
           <i className="fas fa-envelope"></i> Email
         </a>

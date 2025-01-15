@@ -49,7 +49,7 @@ const Projects = () => {
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
-        <div className="projects" style={{ backgroundColor: "#f7f7f7", padding: "40px" }}>
+        <div className="projects" style={{ backgroundColor: "#f7f7f7", padding: "10px",}}>
             <h2 style={{ fontFamily: "'Times New Roman', Times, serif", fontSize: "30px", fontWeight: "bold", color: "#9a9d68", marginLeft: "175px", marginBottom: "20px"}}>
                 Projects
             </h2>

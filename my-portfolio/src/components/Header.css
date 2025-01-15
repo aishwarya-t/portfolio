@@ -1,0 +1,42 @@
+.header {
+    background-color: #9a9d68;
+    padding: 18px 20px;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header-name {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 28px;
+    font-weight: bold;
+    color: #f5f0ec;
+  }
+  
+  .header-links {
+    display: flex; /* Ensures links are in a single row */
+    gap: 15px; /* Adds space between the links */
+  }
+  
+  .header-links a {
+    text-decoration: none;
+    color: #f5f0ec;
+    font-size: 14px;
+    transition: color 0.3s, text-decoration 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 3px; /* Adds space between icon and text */
+  }
+  
+  .header-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+  
+  .header-links i {
+    font-size: 16px;
+  }
+  
