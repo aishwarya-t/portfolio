@@ -3,9 +3,24 @@ import profile from "../images/me1.png";
 
 const Introduction = ({ onArrowClick }) => (
   <div className="container-fluid" style={{ backgroundColor: "#f5f0ec" }}>
-    <div className="row align-items-center" style={{ height: "calc(100vh - 100px)" }}>
+    <div
+      className="row align-items-center"
+      style={{
+        height: "calc(100vh - 100px)",
+        display: "flex", // Ensures the row behaves like a flexbox container
+      }}
+    >
       {/* Text Section */}
-      <div className="col-lg-6 col-md-6 col-sm-12 px-4">
+      <div
+        className="col-lg-6 col-md-6 col-sm-12"
+        style={{
+          textAlign: "left",
+          paddingLeft: "50px",
+          marginLeft: "200px",
+          marginTop: "200px",
+          marginRight: "100px"
+        }}
+      >
         <div
           style={{
             color: "#9a9d68",
@@ -13,7 +28,6 @@ const Introduction = ({ onArrowClick }) => (
             fontSize: "40px",
             fontWeight: "bold",
             marginBottom: "20px",
-            paddingLeft: "99px",
           }}
         >
           Hi!
@@ -23,11 +37,12 @@ const Introduction = ({ onArrowClick }) => (
             fontFamily: "Times",
             color: "#4A5759",
             fontSize: "16px",
-            paddingLeft: "100px",
           }}
         >
-          I'm Aishwarya, a 4th year Computer Science student at UC Irvine, specializing in Intelligent Systems. I’m passionate about using technology
-          to develop innovative solutions and enhance user experiences through collaboration and creative problem-solving.
+          I'm Aishwarya, a 4th year Computer Science student at UC Irvine,
+          specializing in Intelligent Systems. I’m passionate about using
+          technology to develop innovative solutions and enhance user
+          experiences through collaboration and creative problem-solving.
           <br />
           <br />
           Check out some of my notable projects below!
@@ -43,6 +58,9 @@ const Introduction = ({ onArrowClick }) => (
             width: "250px",
             height: "250px",
             objectFit: "cover",
+            borderRadius: "50%",
+            marginRight: "250px",
+            marginTop: "180px"
           }}
         />
       </div>

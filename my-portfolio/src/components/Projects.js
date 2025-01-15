@@ -11,31 +11,37 @@ const projects = [
     title: "Skincare.io",
     image: skincareImage,
     description: "Developed a user-friendly website that curates personalized skincare routines.",
+    technologies: "React • Node.js • Next.js • TypeScript • Puppeteer • PostgreSQL",
   },
   {
     title: "CubeSat",
     image: cubesatImage,
     description: "Created a dashboard to visualize satellite research data and log events.",
+    technologies: "React • TypeScript • Kafka",
   },
   {
     title: "Texas Hold'em",
     image: texasImage,
     description: "Designed an interactive simulation of the classic poker game Texas Hold'em.",
+    technologies: "Python • Flask • JavaScript",
   },
   {
     title: "Web Search Engine",
     image: searchImage,
     description: "Developed a Python-based web crawler that indexes over 3,000 pages.",
+    technologies: "Python • React",
   },
   {
     title: "CycleCrave",
     image: cycleImage,
     description: "Developed a mobile app offering personalized recommendations for managing food cravings and symptoms.",
+    technologies: "React Native • Firebase • Expo • Xcode",
   },
   {
     title: "RIA Chatbot",
     image: chatbotImage,
     description: "Enhanced a chatbot interface to provide real-time assistance.",
+    technologies: "Python • Hugging Face • Anthropic Claude • Meta Llama • AWS",
   },
 ];
 
@@ -80,7 +86,7 @@ const Projects = () => {
                             transform: hoveredIndex === index ? "scale(1.03)" : "scale(1)",
                         }}
                     >
-                        <h3 style={{ fontSize: "18px", fontWeight: "bold" }}>{project.title}</h3>
+                        <h3 style={{ fontFamily: "'Times New Roman', Times, serif", fontSize: "20px", fontWeight: "bold" }}>{project.title}</h3>
                         <img
                             src={project.image}
                             alt={project.title}
@@ -93,25 +99,41 @@ const Projects = () => {
                             }}
                         />
                         {hoveredIndex === index && (
-                        <div
+                          <div
                             style={{
-                                position: "absolute",
-                                top: 0,
-                                left: 0,
-                                width: "100%",
-                                height: "100%",
-                                backgroundColor: index % 2 === 0 ? "#c4c78e" : "#9a9d68",
-                                display: "flex",
-                                alignItems: "center",
-                                justifyContent: "center",
-                                color: "#fff",
-                                padding: "20px",
-                                textAlign: "center",
+                              position: "absolute",
+                              top: 0,
+                              left: 0,
+                              width: "100%",
+                              height: "100%",
+                              backgroundColor: index % 2 === 0 ? "#c4c78e" : "#9a9d68",
+                              display: "flex",
+                              flexDirection: "column", // Align items in a column
+                              alignItems: "center",
+                              justifyContent: "center",
+                              color: "#fff",
+                              textAlign: "center",
+                            }}
+                          >
+                            <p
+                              style={{
+                                fontSize: "16px",
+                                padding: "20px", // Add padding for better readability
                               }}
-                        >
-                            <p style={{ padding: "20px" }}>{project.description}</p>
+                            >
+                              {project.description}
+                            </p>
+                            <p
+                              style={{
+                                fontSize: "14px",
+                                // color: "#eaeaea", // Slightly lighter color for distinction
+                                padding: "20px",
+                              }}
+                            >
+                              {project.technologies}
+                            </p>
                         </div>
-                    )}
+                      )}
                 </div>
                 ))}
             </div>
