@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.f855e6bc.css",
-    "main.js": "/portfolio/static/js/main.e020212b.js",
+    "main.css": "/portfolio/static/css/main.e6c13ad2.css",
+    "main.js": "/portfolio/static/js/main.cb466611.js",
     "static/js/488.21a3b654.chunk.js": "/portfolio/static/js/488.21a3b654.chunk.js",
-    "static/media/logo.svg": "/portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/texas.png": "/portfolio/static/media/texas.bb143b4da28d7076cd6e.png",
+    "static/media/me1.png": "/portfolio/static/media/me1.c782cdd2d1c27fa948e1.png",
+    "static/media/websearchengine1.png": "/portfolio/static/media/websearchengine1.cd2470d6ac935845266d.png",
+    "static/media/ria.png": "/portfolio/static/media/ria.ccbc8fa09915c0d6820b.png",
+    "static/media/cubesat1.png": "/portfolio/static/media/cubesat1.e14eabdeee48a61c9bbe.png",
+    "static/media/cyclecrave.png": "/portfolio/static/media/cyclecrave.510ae4e2eb72ec122e4c.png",
+    "static/media/skincare.png": "/portfolio/static/media/skincare.0e6a9c21e7934ba0c1e5.png",
     "index.html": "/portfolio/index.html",
-    "main.f855e6bc.css.map": "/portfolio/static/css/main.f855e6bc.css.map",
-    "main.e020212b.js.map": "/portfolio/static/js/main.e020212b.js.map",
+    "main.e6c13ad2.css.map": "/portfolio/static/css/main.e6c13ad2.css.map",
+    "main.cb466611.js.map": "/portfolio/static/js/main.cb466611.js.map",
     "488.21a3b654.chunk.js.map": "/portfolio/static/js/488.21a3b654.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.e020212b.js"
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.cb466611.js"
   ]
 }
